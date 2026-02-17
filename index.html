@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda 3D - Demo Robusta</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>🛒 TechStore 3D</h1>
+        <p>Interactúa con los productos (Gira con el mouse)</p>
+    </header>
+
+    <div class="container">
+        <div class="products-grid">
+            <!-- Producto 1 -->
+            <article class="product-card">
+                <div class="canvas-container" id="canvas-1">
+                    <span class="status-badge" id="status-1">Cargando...</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Silla Ergonómica</h2>
+                    <p>Diseño moderno para tu oficina.</p>
+                    <div class="product-price">$299.00</div>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <!-- Producto 2 -->
+            <article class="product-card">
+                <div class="canvas-container" id="canvas-2">
+                    <span class="status-badge" id="status-2">Cargando...</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Astronauta</h2>
+                    <p>Figura decorativa espacial.</p>
+                    <div class="product-price">$49.00</div>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </article>
+
+            <!-- Producto 3 -->
+            <article class="product-card">
+                <div class="canvas-container" id="canvas-3">
+                    <span class="status-badge" id="status-3">Cargando...</span>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Robot Asistente</h2>
+                    <p>Tecnología en tu escritorio.</p>
+                    <div class="product-price">$150.00</div>
+                    <button class="btn">Añadir al carrito</button>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <script src="scripts.js" type="module">
+        
+    </script>
+</body>
+</html>
